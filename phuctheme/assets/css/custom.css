@@ -1,0 +1,379 @@
+/* filepath: wp-content/themes/phuctheme/assets/css/custom.css */
+
+/* General Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #0073aa;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2.entry-title a {
+    color: #0073aa;
+    transition: color 0.3s ease;
+}
+
+h2.entry-title a:hover {
+    color: #005177;
+    text-decoration: none;
+}
+
+/* Card Styles (used in content.php) */
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.entry-meta {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+/* Navigation Menu */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0073aa !important;
+}
+
+.navbar-brand:hover {
+    color: #005177 !important;
+}
+
+.nav-link {
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #0073aa;
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #0073aa;
+}
+
+/* Series Menu Styles */
+.series-menu {
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+.series-nav {
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    justify-content: center;
+}
+
+.series-nav .nav-item {
+    margin: 0;
+}
+
+.series-nav .nav-link {
+    color: #0073aa;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.series-nav .nav-link:hover {
+    background-color: #0073aa;
+    color: #fff;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+footer a {
+    color: #adb5bd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+.list-inline-item {
+    margin-right: 1rem;
+}
+
+/* Căn giữa nội dung trong footer */
+footer p {
+    margin-bottom: 0;
+}
+
+/* Đảm bảo các mục menu trong footer cũng căn giữa */
+footer .list-inline {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+footer .list-inline-item {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #0073aa;
+    border-color: #0073aa;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn-primary:hover {
+    background-color: #005177;
+    border-color: #005177;
+    transform: translateY(-2px);
+}
+
+/* Pagination */
+.pagination-nav .page-numbers {
+    padding: 8px 16px;
+    margin: 0 4px;
+    border: 1px solid #ddd;
+    color: #0073aa;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination-nav .page-numbers.current,
+.pagination-nav .page-numbers:hover {
+    background-color: #0073aa;
+    color: #fff;
+    border-color: #0073aa;
+}
+
+/* Article Styles on Homepage */
+article {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+article .entry-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+article .entry-title a {
+    color: #0073aa;
+    transition: color 0.3s ease;
+}
+
+article .entry-title a:hover {
+    color: #005177;
+}
+
+article .entry-content {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Search Widget Styles */
+.search-widget h3 {
+    font-size: 1.25rem;
+    color: #0073aa;
+    margin-bottom: 0.5rem;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-form input[type="search"] {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 1rem;
+}
+
+.search-form input[type="submit"] {
+    padding: 0.5rem 1rem;
+    border: 1px solid #0073aa;
+    border-left: none;
+    background-color: #0073aa;
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-form input[type="submit"]:hover {
+    background-color: #005177;
+}
+
+/* Search Suggestions Styles */
+.search-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    display: none;
+}
+
+.suggestion-item {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.suggestion-item:last-child {
+    border-bottom: none;
+}
+
+.suggestion-item a {
+    color: #333;
+    text-decoration: none;
+}
+
+.suggestion-item a:hover {
+    color: #0073aa;
+}
+
+/* Sidebar Styles */
+.widget {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.widget h3 {
+    font-size: 1.25rem;
+    color: #0073aa;
+    margin-bottom: 1rem;
+}
+
+.widget ul {
+    list-style: none;
+    padding: 0;
+}
+
+.widget ul li {
+    margin-bottom: 0.5rem;
+}
+
+.widget ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.widget ul li a:hover {
+    color: #0073aa;
+}
+
+/* Hiệu ứng cho navbar khi scroll */
+header {
+    transition: all 0.3s ease;
+}
+
+header.scrolled {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hiệu ứng fade-in cho card */
+.card {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.card.fade-in {
+    opacity: 1;
+}
+
+/* Post Actions Styles */
+.post-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.post-actions .btn-link {
+    color: #0073aa;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: color 0.3s ease;
+}
+
+.post-actions .btn-link:hover {
+    color: #005177;
+}
+
+.post-actions .like-icon,
+.post-actions .comment-icon,
+.post-actions .share-icon {
+    font-size: 1rem;
+}
+
+.post-actions .like-count,
+.post-actions .comment-count {
+    margin-left: 0.2rem;
+    font-weight: bold;
+}
